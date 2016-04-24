@@ -6,14 +6,34 @@
     <groupId>com.github.hronom</groupId>
     <artifactId>robocraft-assistant</artifactId>
     <version>1.0.0</version>
+    <packaging>pom</packaging>
+
     <modules>
         <module>robocraft-assistant-app</module>
         <module>robocraft-assistant-core</module>
     </modules>
-    <packaging>pom</packaging>
 
     <name>robocraft-assistant</name>
-    <url>http://maven.apache.org</url>
+    <url>https://github.com/Hronom/robocraft-assistant</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/Hronom/robocraft-assistant.git</connection>
+        <developerConnection>scm:git:https://github.com/Hronom/robocraft-assistant.git</developerConnection>
+        <url>https://github.com/Hronom/robocraft-assistant</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/Hronom/robocraft-assistant/issues</url>
+    </issueManagement>
+
+    <developers>
+        <developer>
+            <name>Eugene Tenkaev</name>
+            <email>hronom@gmail.com</email>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -87,7 +107,7 @@
                 <artifactId>github-release-plugin</artifactId>
                 <version>1.1.1</version>
                 <configuration>
-                    <description>See https://github.com/Hronom/poker-helper for details</description>
+                    <description>See https://github.com/Hronom/robocraft-assistant for details</description>
                     <releaseName>v${project.version}</releaseName>
                     <tag>v${project.version}</tag>
                     <artifact>${project.basedir}/dist/${project.artifactId}-${project.version}-bin.zip</artifact>

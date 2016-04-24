@@ -40,13 +40,6 @@
                 <directory>src/main/resources</directory>
             </resource>
             <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>poker-helper-gui.properties</include>
-                </includes>
-                <filtering>true</filtering>
-            </resource>
-            <resource>
                 <directory>src/test/resources</directory>
             </resource>
         </resources>
@@ -181,7 +174,7 @@
             <plugin>
                 <groupId>com.akathist.maven.plugins.launch4j</groupId>
                 <artifactId>launch4j-maven-plugin</artifactId>
-                <version>1.7.8</version>
+                <version>1.7.10</version>
                 <executions>
                     <execution>
                         <id>l4j-clui</id>
@@ -195,9 +188,9 @@
                             <jar>${project.artifactId}-${project.version}.jar</jar>
                             <dontWrapJar>true</dontWrapJar>
                             <errTitle>TODO</errTitle>
-                            <icon>src/main/icons/1435621016_cards.ico</icon>
+                            <icon>src/main/icons/1461509409_robot_64.ico</icon>
                             <classPath>
-                                <mainClass>com.github.hronom.game.cards.gui.PokerHelperGuiMain</mainClass>
+                                <mainClass>com.github.hronom.robocraft.assistant.app.App</mainClass>
                                 <addDependencies>true</addDependencies>
                                 <preCp>anything</preCp>
                             </classPath>

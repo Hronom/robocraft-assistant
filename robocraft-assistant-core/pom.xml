@@ -40,13 +40,6 @@
                 <directory>src/main/resources</directory>
             </resource>
             <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>org/bitbucket/hronom/game/cards/core/poker-helper-core.properties</include>
-                </includes>
-                <filtering>true</filtering>
-            </resource>
-            <resource>
                 <directory>src/test/resources</directory>
             </resource>
         </resources>
