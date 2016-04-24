@@ -12,13 +12,23 @@
     <packaging>jar</packaging>
 
     <name>robocraft-assistant-app</name>
-    <url>http://maven.apache.org</url>
 
     <dependencies>
         <dependency>
             <groupId>com.github.hronom</groupId>
             <artifactId>robocraft-assistant-core</artifactId>
             <version>1.0.0</version>
+        </dependency>
+        <!-- Log4j -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.5</version>
         </dependency>
         <!-- JUnit -->
         <dependency>
@@ -55,7 +65,7 @@
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib</classpathPrefix>
                             <classpathLayoutType>simple</classpathLayoutType>
-                            <mainClass>com.github.hronom.robocraft.assistant.app.App</mainClass>
+                            <mainClass>com.github.hronom.robocraft.assistant.app.RobocraftAssistantApp</mainClass>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                         </manifest>
@@ -190,7 +200,7 @@
                             <errTitle>TODO</errTitle>
                             <icon>src/main/icons/1461509409_robot_64.ico</icon>
                             <classPath>
-                                <mainClass>com.github.hronom.robocraft.assistant.app.App</mainClass>
+                                <mainClass>com.github.hronom.robocraft.assistant.app.RobocraftAssistantApp</mainClass>
                                 <addDependencies>true</addDependencies>
                                 <preCp>anything</preCp>
                             </classPath>
